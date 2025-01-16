@@ -12,9 +12,10 @@
             <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
             <button>Logout</button>
         </form>
-        {{end}}
+        {{else}}
         <a href='/user/signup'>Signup</a>
         <a href='/user/login'>Login</a>
+        {{end}}
     </div>
 </nav>
 {{end}}
